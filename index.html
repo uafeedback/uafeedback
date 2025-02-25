@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Feedback & Complaint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Submit Your Feedback / Complaint</h2>
+        <form id="feedbackForm">
+            <label for="regId">Student Registration ID:</label>
+            <input type="text" id="regId" required>
+
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="whatsapp">WhatsApp Number:</label>
+            <input type="text" id="whatsapp" required>
+
+            <label for="complaint">Feedback/Complaint:</label>
+            <textarea id="complaint" rows="4" required></textarea>
+
+            <label for="file">Attach File (optional):</label>
+            <input type="file" id="file">
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation" style="color: green; display: none;">
+            Thank you for your response. We will review your complaint and get back to you soon.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
